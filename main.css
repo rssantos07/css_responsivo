@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    
+}
+
+body{
+    background-color: rgb(240, 238, 237);
+}
+header {
+    background-color: rgb(43, 90, 245);
+    margin-bottom: 32px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 90, 245);
+    padding: 16px;
+    color: #fff;
+}
+
+.container li {
+    display: inline;
+    margin-right: 16px;
+
+}
+
+.container li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.sobre {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sobre img {
+    width: 40%;
+    margin-right: 32px;
+}
+
+h3 {
+    border-bottom: 2px solid rgb(43, 90, 245);
+    margin-bottom: 16px;
+    color: rgb(43, 90, 245);
+    padding-bottom: 16px;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+
+}
+
+.produto {
+    max-width: 100%;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produto button {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(43, 90, 245);
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.produto h4 {
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.produto p {
+    padding: 16px 0;
+    font-size: 0.8em;
+    height: 10%;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produto {
+        margin-bottom: 16px;
+    }
+
+    .container li {
+        display: block;
+        padding: 4px;
+    }
+
+    header div.container h1 {
+        max-width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .sobre h5 {
+        font-size: 20px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+    }
+
+    .produto {
+        margin-bottom: 32px;
+
+    }
+
+    .produto h4 {
+        max-height: 8%;
+        height: 7%;
+        font-size: 1.3em;
+    }
+
+    .produto p {
+        font-size: 18px;
+        height: 15%;
+    }
+}
+
+
+
